@@ -1,0 +1,172 @@
+.banner {
+  width: 100%;
+  .banner__item {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border-top: 7px solid #212121;
+    background-color: #ae3b44;
+  }
+  .banner__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 15px;
+    padding-left: 28px;
+  }
+  .banner__title {
+    max-width: 200px;
+    font-size: 24px;
+    color: #edf2f5;
+    line-height: initial;
+    margin-top: 0;
+  }
+  .banner__text {
+    max-width: 470px;
+    font-size: 12px;
+    line-height: 19px;
+    margin-top: 0;
+  }
+}
+aside{
+  flex-shrink: 0;
+  display: block;
+  border: 2px solid gray;
+  width: 250px;
+  height: 100%;
+}
+.menu {
+  margin: 0;
+  padding-left: 0
+}
+.menu__item {
+  padding-left: 20px;
+  width: 100%;
+  color: gray;
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: none;
+  line-height: 40px;
+  border-bottom: 1px solid gray;
+}
+.--middle{
+  background-color: rgb(238, 234, 234);
+  padding-left: 40px;
+}
+.--bottom {
+  background-color: lightgray;
+  padding-left: 60px;
+}
+.menu__item:hover {
+  color: red;
+}
+.--active {
+  background-color: red;
+  color: white;
+}
+h4{
+  font-size: 15px;
+  letter-spacing: 0px;
+  color: #ae3b44;
+  font-family: "Arial";
+  font-weight: 400;
+}
+.content-holder {
+  padding: 40px 25px 30px 40px;
+  
+  h2{
+    font: 24px bold;
+    font-family: "Arial";
+    width: 410px;
+  }
+  .nice-text{
+    font-size: 15px;
+    line-height: 21px;
+    color: #909293;
+    font-family: "Arial";
+    text-align: left;
+    font-style: italic ;
+  }
+  p {
+    line-height: 19px;
+    color: #3c3c3c;
+    font-family: "Arial";
+    text-align: left;
+  }
+  .bottom-line {
+      padding-bottom: 30px;
+      content: "";
+      width: 100%;
+      border-bottom: 1px solid gray
+  }
+  .main-photo-holder {
+    text-align:center;
+    margin: 40px auto;
+
+    .main-photo {
+      width: 490px;
+      padding-bottom: 10px;
+    }
+    figcaption {
+      font-size: 11px;
+      color: lightgray;
+      text-align: center;
+    }
+  }
+  .photo {
+    padding: 20px 30px 20px 0;
+  }
+  
+}
+.key-holder{
+  .key{
+    padding-top: 10px;
+    a {
+      text-decoration: none;
+      font-size: 15px;
+      letter-spacing: 0px;
+      line-height: 18px;
+      color: #ae3b44;
+    }
+  }
+  .--left{
+    transform: translateY(50%);
+    display: flex;
+    justify-content: flex-start;
+    img{
+      transform: translateX(-50%)
+      translateY(10%)
+    }
+  }
+  .--right{
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: flex-end;
+    img{
+      transform: rotate(180deg)
+      translateX(-50%)
+      translateY(-10%)
+    }
+  }
+}
+.our-clients {
+  h3{
+    font-size: 18px;
+    letter-spacing: 0px;
+    color: #212121;
+    font-family: "Arial";
+  }
+  li{
+    margin: auto 0;
+  }
+  width: 100%;
+  display: flex;
+  justify-content:space-around;
+  padding: 0;
+  margin: 0;
+  padding: 30px 0;
+  content: "";
+  width: 100%;
+  border-top: 1px solid gray
+
+}

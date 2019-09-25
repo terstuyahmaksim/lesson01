@@ -1,0 +1,234 @@
+.banner {
+  width: 100%;
+  .banner__item {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border-top: 7px solid #212121;
+    background-color: #ae3b44;
+  }
+  .banner__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 15px;
+    padding-left: 28px;
+  }
+  .banner__title {
+    max-width: 200px;
+    font-size: 24px;
+    color: #edf2f5;
+    line-height: initial;
+    margin-top: 0;
+    font-weight: 400;
+  }
+  .banner__text {
+    max-width: 470px;
+    font-size: 12px;
+    line-height: 19px;
+    margin-top: 0;
+  }
+}
+aside{
+  flex-shrink: 0;
+  display: block;
+  //border: 2px solid gray;
+  width: 250px;
+  height: 100%;
+}
+.menu {
+  margin: 0;
+  padding-left: 0
+}
+
+.menu__img {
+  position: relative;
+  padding-top: 45px;
+}
+.menu__title {
+  display: block;
+  position: absolute;
+  font-size: 18px;
+  letter-spacing: 0px;
+  color: #212121;
+  padding-left: 20px;
+  top: 320px;
+}
+.menu__item {
+  padding-left: 20px;
+  width: 100%;
+  color: gray;
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: none;
+  padding: 10px 0 10px 20px;
+  border-bottom: 1px solid gray;
+}
+.menu__item--middle{
+  background-color: rgb(238, 234, 234);
+  padding-left: 40px;
+}
+.drop-arrow {
+  float: right;
+  padding: 0 15px;
+}
+
+.drop-arrow--rotate {
+  transform: rotate(90deg);
+}
+
+.menu__item--bottom {
+  background-color: lightgray;
+  padding-left: 30px;
+  img{
+    padding: 0 15px;
+  }
+}
+.menu__item:hover {
+  color: red;
+}
+.menu__item--active, .menu__item--active:hover {
+  background-color: red;
+  color: white;
+}
+h4{
+  font-size: 15px;
+  letter-spacing: 0px;
+  color: #ae3b44;
+  font-family: "Arial";
+  font-weight: 400;
+}
+
+.date-holder {
+  position: relative;
+  float: right;
+  top: 42px;
+}
+
+.date-holder__date,
+.date-holder__month,
+.date-holder__year {
+  position: absolute;
+  color: #939799;
+}
+
+.date-holder__date {
+  font-size: 17px;
+  left:30px;
+  top: 10px;
+  width: bolder;
+}
+.date-holder__month {
+  left: 28px;
+  top: 35px;
+}
+.date-holder__year {
+  left:28px;
+  top: 50px;
+}
+
+.content-holder {
+  padding: 10PX 25px 0 40px;
+  
+  h2{
+    font: 24px bold;
+    font-family: "Arial";
+    max-width: 410px;
+    margin-bottom: -10px;
+  }
+  .nice-text{
+    font-size: 15px;
+    line-height: 21px;
+    color: #909293;
+    font-family: "Arial";
+    text-align: left;
+    font-style: italic ;
+  }
+  p {
+    line-height: 19px;
+    color: #3c3c3c;
+    font-family: "Arial";
+    text-align: left;
+  }
+  .bottom-line {
+      padding-bottom: 30px;
+      content: "";
+      //max-width: 420px;
+      border-bottom: 1px solid gray
+  }
+  .main-photo-holder {
+    text-align:center;
+    margin: 40px auto;
+
+    .main-photo {
+      width: 490px;
+      padding-bottom: 10px;
+    }
+    figcaption {
+      font-size: 11px;
+      color: lightgray;
+      text-align: center;
+    }
+  }
+  .photo {
+    padding: 20px 30px 20px 0;
+  }
+  
+}
+.key-holder{
+  display: flex;
+  justify-content: space-between;
+  .key{
+    padding: 25px 0 40px;
+    a {
+      text-decoration: none;
+      font-size: 15px;
+      letter-spacing: 0px;
+      line-height: 20px;
+      color: #ae3b44;
+    }
+  }
+  .key--left{
+    //transform: translateY(50%);
+    display: flex;
+    justify-content: flex-start;
+    img{
+      transform: translateX(-50%)
+      translateY(10%)
+    }
+  }
+  .key--right{
+    //transform: translateY(-50%);
+    display: flex;
+    justify-content: flex-end;
+    img{
+      transform: rotate(180deg)
+      translateX(-50%)
+      translateY(-10%)
+    }
+  }
+}
+.our-clients {
+  h3{
+    font-size: 18px;
+    letter-spacing: 0px;
+    color: #212121;
+    font-family: "Arial";
+  }
+  li{
+    margin: auto 0;
+  }
+  width: 100%;
+  display: flex;
+  justify-content:space-around;
+  padding: 0;
+  margin: 0;
+  padding: 30px 0;
+  content: "";
+  width: 100%;
+  border-top: 1px solid gray
+}
+
+.our-clients__list:hover {
+  opacity: 0.5;
+}

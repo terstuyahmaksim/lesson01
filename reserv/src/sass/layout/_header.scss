@@ -1,0 +1,121 @@
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  display: flex;
+  font-size: 12px;
+}
+
+header {
+	background-image: url("../../../dist/img/world map.png");
+	font-size: 13px;
+  justify-content: space-between;
+  height: 120px;
+	img {
+    margin-top: 38px;
+    width: 180px;
+    height: 40px;
+	}
+}
+
+.nav-bar{
+
+  margin-top: 50px;
+}
+.nav-bar__link-apper {
+  text-decoration: none;
+  color: black;
+  &:hover {
+    color: red;
+  }
+}
+
+.nav-bar>ul {
+  display: flex;
+  justify-content: flex-end;;
+}
+nav>ul>li {
+  position: relative;
+  a {
+    display: block;
+    padding: 10px 12px;
+  }
+}
+// nav style
+nav>ul>li>ul {
+  display: none;
+  white-space: nowrap;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 15px;
+  li:hover>ul {
+    display: block;
+  }
+  &:before {
+    position: absolute;
+    left: 103%;
+    transform: translateX(-50%);
+    top: 26px;
+    width: 0;
+    height: 0;
+    content: '';
+    border-top: 5px solid transparent;
+    border-left: 6px solid black;
+    border-bottom: 5px solid transparent;
+  }
+  &:after {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 9px;
+    width: 0;
+    height: 0;
+    content: '';
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 6px solid black;
+  }
+}
+
+//2 & 3 lvl menu style
+.nav-bar__link-middle, 
+.nav-bar__link-bottom {
+  text-decoration: none;
+	color: gray;
+  display: block;
+  padding: 10px 20px;
+  background-color: black;
+  border-bottom: 1px solid darkgray;
+  &:hover,
+  &:hover{
+    color: white;
+  }
+}
+nav>ul>li:hover>ul {
+	display: block;
+	transition: 0.3s;
+}
+///3 lvl
+//menu
+nav>ul>li>ul>li>ul {
+  display: none;
+  white-space: nowrap;
+	position: absolute;
+	top: 12%;
+  left:105%;
+  li>a:hover{
+    color: white;
+  }
+	&:after {
+    position: absolute;
+    left: 2%;
+    transform: translateX(-50%);
+    top: 5%;
+    width: 0;
+    height: 0;
+    content: '';
+    border-top: 5px solid transparent;
+    border-left: 6px solid white;
+    border-bottom: 5px solid transparent;
+  }
+}
