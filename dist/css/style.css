@@ -597,6 +597,7 @@ h4 {
 
 .content-holder .photo {
   padding: 20px 30px 20px 0;
+  float: left;
 }
 
 .key-holder {
@@ -644,8 +645,11 @@ h4 {
 }
 
 .key-holder .key--right img {
-  -webkit-transform: rotate(180deg) translateX(-50%) translateY(-10%);
-  transform: rotate(180deg) translateX(-50%) translateY(-10%);
+  float: right;
+  padding-right: 10px;
+  padding-bottom: 4px;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .our-clients {
@@ -751,4 +755,50 @@ h4 {
 
 .social__list > a:hover {
   color: red;
+}
+
+.social__twitter,
+.social__facebook,
+.social__linkedin,
+.social__rss {
+  background-image: url("../../../dist/img/social_links.png");
+  background-repeat: no-repeat;
+  height: 24px;
+  width: 24px;
+  display: inline-block;
+  margin-right: 10px;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.social__twitter {
+  background-position: 0 0;
+}
+
+.social__twitter:hover {
+  background-position: -24px 0;
+}
+
+.social__facebook {
+  background-position: 0 -24px;
+}
+
+.social__facebook:hover {
+  background-position: -24px -24px;
+}
+
+.social__linkedin {
+  background-position: -48px 0;
+}
+
+.social__linkedin:hover {
+  background-position: -72px 0;
+}
+
+.social__rss {
+  background-position: -48px -24px;
+}
+
+.social__rss:hover {
+  background-position: -72px -24px;
 }

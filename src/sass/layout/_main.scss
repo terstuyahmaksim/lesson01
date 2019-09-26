@@ -172,6 +172,7 @@ h4{
   }
   .photo {
     padding: 20px 30px 20px 0;
+    float: left;
   }
   
 }
@@ -202,9 +203,12 @@ h4{
     display: flex;
     justify-content: flex-end;
     img{
+      float: right;
+      padding-right: 10px;
+      padding-bottom: 4px;
       transform: rotate(180deg)
-      translateX(-50%)
-      translateY(-10%)
+      // translateX(-50%)
+      // translateY(-10%)
     }
   }
 }

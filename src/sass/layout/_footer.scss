@@ -25,7 +25,7 @@
   justify-content:space-between;
 
   
-  a {
+    a {
     text-decoration: none;
     font-size: 12px;
     line-height: 19px;
@@ -55,4 +55,44 @@
 }
 .social__list>a:hover {
   color:red
+}
+
+.social__twitter,
+.social__facebook,
+.social__linkedin,
+.social__rss {
+  background-image: url(../../../dist/img/social_links.png);
+  background-repeat: no-repeat;
+  height: 24px;
+  width: 24px;
+  display: inline-block;
+  margin-right: 10px;
+  transition: all 0.2s ease-out;
+}
+
+.social__twitter {
+  background-position: 0 0;
+  &:hover {
+    background-position: -24px 0;
+  }
+}
+
+.social__facebook {
+  background-position: 0 -24px;
+  &:hover {
+    background-position: -24px -24px;
+  }
+}
+.social__linkedin {
+  background-position: -48px 0;
+  &:hover {
+    background-position: -72px 0;
+  }
+  
+}
+.social__rss {
+  background-position: -48px -24px;
+  &:hover {
+    background-position: -72px -24px;
+  }
 }
